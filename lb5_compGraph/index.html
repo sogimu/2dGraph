@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <style>
+        canvas{
+            border: solid 1px #228b22;
+        }
+    </style>
+    <title>lb5</title>
+
+    <script type="text/javascript" src="sylvester.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</head>
+
+<body>
+<div id="container"></div>
+
+</body>
+
+<input type="button" value="вверх" onclick="toUp()">
+<input type="button" value="вниз" onclick="toDown()">
+<input type="button" value="влево" onclick="toLeft()">
+<input type="button" value="вправо" onclick="toRight()"><br>
+<input type="button" value="к себе" onclick="toTop()">
+<input type="button" value="от себя" onclick="toBootom()"><br>
+
+<input type="button" value="повернуть относительно X" onclick="rotateX()">
+<input type="button" value="повернуть относительно Y" onclick="rotateY()"><br>
+<input type="button" value="повернуть относительно Z" onclick="rotateZ()"><br>
+<input type="button" value="увеличить" onclick="incZoom()">
+<input type="button" value="уменьшить" onclick="decZoom()">
+<input type="button" value="отразить по X" onclick="reproduceX()">
+<input type="button" value="отразить по Y" onclick="reproduceY()">
+<input type="button" value="отразить по XY" onclick="reproduceXY()"><br>
+<input type="button" value="Вид спереди" onclick="matrixStand()">
+<input type="button" value="Перспективная" onclick="matrixPersp()">
+<input type="button" value="Ковалье" onclick="matrixKaval()">
+<input type="button" value="востановить" onclick="refresh()">
+</html>

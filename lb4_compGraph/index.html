@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <style>
+        canvas{
+            border: solid 1px #228b22;
+        }
+    </style>
+    <title>lb4</title>
+
+    <script type="text/javascript" src="sylvester.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</head>
+
+<body>
+<div id="container"></div>
+
+</body>
+<label>x <input type="text" value="0" id="x"></label>
+<label>y <input type="text" value="0" id="y"></label><br>
+
+<input type="button" value="вверх" onclick="up()">
+<input type="button" value="вниз" onclick="down()">
+<input type="button" value="влево" onclick="left()">
+<input type="button" value="вправо" onclick="right()"><br>
+<input type="button" value="повернуть в лево" onclick="rotateLeft()">
+<input type="button" value="повернуть в право" onclick="rotateRigth()"><br>
+<input type="button" value="увеличить по X" onclick="incZoomX()">
+<input type="button" value="увелечить по Y" onclick="incZoomY()"><br>
+<input type="button" value="уменьшить по X" onclick="decZoomX()">
+<input type="button" value="уменьшить по Y" onclick="decZoomY()"><br>
+<input type="button" value="отразить по X" onclick="reproduceX()">
+<input type="button" value="отразить по Y" onclick="reproduceY()">
+<input type="button" value="отразить по XY" onclick="reproduceXY()"><br>
+<input type="button" value="востановить" onclick="refresh()">
+</html>
